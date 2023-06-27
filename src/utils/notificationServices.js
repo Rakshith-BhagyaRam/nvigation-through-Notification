@@ -48,6 +48,10 @@ export async function notificationListner() {
       setTimeout(() => {
         NavigationService.navigate('Screen3');
       }, 1200);
+    } else if (!!remoteMessage.data && remoteMessage.data.scrn === 'Home') {
+      setTimeout(() => {
+        NavigationService.navigate('Home');
+      }, 1200);
     }
   });
 
